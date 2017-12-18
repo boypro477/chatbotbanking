@@ -9,14 +9,14 @@
 <div class="form-group">
   <textarea class="form-control" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
   <button class="btn" type="button" onclick="startConverting()" ><i class="fa fa-microphone"></i></button>
-  <button type="submit" onclick="abc()" class="btn btn-primary">Send</button>
+  <button type="submit" class="btn btn-primary" id="send">Send</button>
 </div>
 
 <!-- <p id="Test">Ha ha</p> -->
 </form>
 <script>
-  $(function abc (){
-    $('a.say').on('click',function(e){
+  $(function(){
+    $('#send').on('click',function(e){
       e.preventDefault();
     var text=  document.getElemetById("resultTextArea");
       //var url ="http://translate.google.com/translate_tts?tl=vi&q=" + text + "&client=tw-ob";
