@@ -1,0 +1,33 @@
+#resultTextArea{
+  max-width: 600px;
+  position:fixed;
+  top:55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+}
+#Textarea{
+  max-width: 600px;
+  position:fixed;
+  top:74%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+}
+.btn{
+  position: fixed;
+  top:71%;
+  left:70%;
+}
+.btn-primary{
+  position: fixed;
+  top:71%;
+  left:65%;
+}
+.logoimg{
+  /*visibility: hidden;*/
+  position: fixed;
+  top:25%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}

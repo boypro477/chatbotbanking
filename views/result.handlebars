@@ -1,0 +1,15 @@
+
+<form method="post">
+<div class="form-group">
+  <textarea class="form-control" id="resultTextArea"rows="7" readonly>{{answer}}</textarea>
+</div>
+<div class="form-group">
+  <textarea class="form-control" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
+  <button class="btn" type="button" onclick="startConverting()" ><i class="fa fa-microphone"></i></button>
+  <button type="submit" class="btn btn-primary">Send</button>
+</div>
+
+<!-- <p id="Test">Ha ha</p> -->
+</form>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="Speech_to_text.js"></script>
