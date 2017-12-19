@@ -1,12 +1,15 @@
 $("#text_form").on("submit", event => {
   event.preventDefault();
   $.ajax({
-    url: "/",
+    url: "/tuvan/api/answer",
     type: "post",
     data: $("#text_form").serialize()
   })
     .then(answer => {
-      var text= document.getElementById("resultTextArea");
+      console.log(answer);
+      // var result=answer;
+      $("#resultTextArea").text(answer.answer);
+      var text= answer.answer;
       text = encodeURIComponent(text);
       var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
       $('audio').attr('src',url).get(0).play();
