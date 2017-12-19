@@ -35,10 +35,8 @@
 							}
 						}
 						text = finalTranscripts + interimTranscripts;
-						var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
-
 						document.getElementById('Textarea').innerHTML = finalTranscripts  + interimTranscripts ;
-						$('audio').attr('src',url).get(0).play();
+			
 						// document.getElementById('Test').innerHTML = finalTranscripts  + interimTranscripts ;
 
 					};

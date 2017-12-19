@@ -25,9 +25,18 @@
   left:65%;
 }
 .logoimg{
-  /*visibility: hidden;*/
+  display: block;
   position: fixed;
   top:25%;
   left:50%;
   transform: translate(-50%,-50%);
+}
+#home_test{
+  position: fixed;
+  top:40%;
+  display: block;
+  color: red;
+}
+#home_test h2{
+  color: blue;
 }
