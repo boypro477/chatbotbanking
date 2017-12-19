@@ -19,11 +19,8 @@
   $(function(){
     $('#send').on('click',function(e){
       e.preventDefault();
-    var text=  document.getElemetById("resultTextArea");
-      //var url ="http://translate.google.com/translate_tts?tl=vi&q=" + text + "&client=tw-ob";
-      //var url ="http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+  text + "&tl=vi&client=tw-ob"
+      var text=  document.getElemetById("resultTextArea");
       var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
-      //var url ="https://translate.google.com/translate_tts?ie=UTF-8&total=1&idx=0&textlen=32&client=tw-ob&q="+ text +"&tl=vi"
       $('audio').attr('src',url).get(0).play();
     });
   });
