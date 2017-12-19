@@ -1,12 +1,12 @@
 $("#text_form").on("submit", event => {
   event.preventDefault();
   $.ajax({
-    url: "",
+    url: "/",
     type: "post",
-    data: $("#test_form").serialize()
+    data: $("#text_form").serialize()
   })
     .then(answer => {
-      var text=  document.getElementById("resultTextArea");
+      var text= document.getElementById("resultTextArea");
       text = encodeURIComponent(text);
       var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
       $('audio').attr('src',url).get(0).play();
