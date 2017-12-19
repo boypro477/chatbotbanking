@@ -6,26 +6,10 @@ $("#text_form").on("submit", event => {
     data: $("#test_form").serialize()
   })
     .then(answer => {
-      $("#success_notification")
-        .html(`Test completed! Your score is ${result.score}.`)
-        .removeClass("d-none");
-      $("html, body").animate({ scrollTop: 0 }, "fast");
-      result.correctAnswers.forEach(correctAnswer => {
-        $(
-          `[name='question_${correctAnswer.id}'][value='${correctAnswer.correct}']`
-        )
-          .parent()
-          .addClass("text-success");
-
-        if (
-          $(`[name='question_${correctAnswer.id}']:checked`).attr("value") !=
-          correctAnswer.correct
-        ) {
-          $(`[name='question_${correctAnswer.id}']:checked`)
-            .parent()
-            .addClass("text-danger");
-        }
-      });
+      var text=  document.getElementById("resultTextArea");
+      text = encodeURIComponent(text);
+      var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
+      $('audio').attr('src',url).get(0).play();
     })
     .fail(err => {
       alert("An error occured, please try again later");
