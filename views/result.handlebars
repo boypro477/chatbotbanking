@@ -12,18 +12,16 @@
   <button class="btn" type="button" onclick="startConverting()" ><i class="fa fa-microphone"></i></button>
   <button type="submit" class="btn btn-primary" id="send">Send</button>
 </div>
-
-<!-- <p id="Test">Ha ha</p> -->
 </form>
 <script>
-  $(function(){
     $('#send').on('click',function(e){
       e.preventDefault();
-      var text=  document.getElemetById("resultTextArea");
+      var text=  document.getElementById("resultTextArea");
+      text = encodeURIComponent(text);
       var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
       $('audio').attr('src',url).get(0).play();
     });
-  });
+
 </script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="Speech_to_text.js"></script>
