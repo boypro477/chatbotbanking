@@ -19,3 +19,31 @@ $("#text_form").on("submit", event => {
       console.error(err);
     });
 });
+// function checkTextLength(){
+//   var input = document.getElementById('Textarea').value;
+//   if(input.length<=1)
+//   {
+//     // $("#send").removeClass("btn-primary").addClass("btn-Secondary");
+//     document.getElementById("send").disabled = true;
+//   }
+//   else {
+//     document.getElementById("send").disabled = false;
+//     // $("#send").removeClass("btn-Secondary").addClass("btn-primary");
+//
+//   }
+// }
+// const textarea = document.getElementById("Textarea");
+// textarea.addEventListener("change", checkTextLength);
+// textarea.addEventListener("keyup", checkTextLength);
+// textarea.addEventListener("paste", checkTextLength);
+
+function resetText (){
+  setTimeout(function() {
+      document.getElementById("Textarea").value = null;
+
+   }, 100);
+
+}
+document.getElementById("send").addEventListener("mouseup",{ resetText,startConverting});
+// document.getElementById("microphone").addEventListener("click", resetText);
+<script src="/js/answer.js"></script>

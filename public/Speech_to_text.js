@@ -7,6 +7,7 @@
 				if (recognizing == false )
 					{
 						speechRecognizer.stop();
+						// return;
 					}
 
 				if('webkitSpeechRecognition' in window)
@@ -35,8 +36,8 @@
 							}
 						}
 						text = finalTranscripts + interimTranscripts;
-						document.getElementById('Textarea').innerHTML = finalTranscripts  + interimTranscripts ;
-			
+						document.getElementById('Textarea').value = finalTranscripts  + interimTranscripts ;
+
 						// document.getElementById('Test').innerHTML = finalTranscripts  + interimTranscripts ;
 
 					};
