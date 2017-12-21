@@ -44,6 +44,6 @@ function resetText (){
    }, 100);
 
 }
-document.getElementById("send").addEventListener("mouseup",{ resetText,startConverting});
+document.getElementById("send").addEventListener("mouseup",resetText);
 // document.getElementById("microphone").addEventListener("click", resetText);
-<script src="/js/answer.js"></script>
+// <script src="/js/answer.js"></script>
