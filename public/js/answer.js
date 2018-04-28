@@ -6,9 +6,12 @@ $("#text_form").on("submit", event => {
     data: $("#text_form").serialize()
   })
     .then(answer => {
-      console.log(answer);
+      // console.log(answer);
       // var result=answer;
-      $("#resultTextArea").text(answer.answer);
+      // $("#feedback").text(answer.answer);
+      document.getElementById('output').innerHTML+='<div class="guest">'+'<p>'+'<b>'+'Guest: '+'</b>'+document.getElementById('Textarea').value+'</br'+'</p>'+"</div>";      
+      document.getElementById("output").innerHTML+='<div class="bot">'+'<p>'+'<b>'+'BOT: '+'</b>'+answer.answer+'</br>'+'</p>'+'</div>';
+      document.getElementById('Textarea').value='';
       var text= answer.answer;
       text = encodeURIComponent(text);
       var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
@@ -19,7 +22,7 @@ $("#text_form").on("submit", event => {
       console.error(err);
     });
 });
-
+button.addEventListener
 function resetText (){
   setTimeout(function() {
       document.getElementById("Textarea").value = null;
