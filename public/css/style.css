@@ -1,0 +1,59 @@
+.navbar {
+  position: relative;
+}
+#resultTextArea{
+  max-width: 600px;
+  position:absolute;
+  top:55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+}
+#Textarea{
+  max-width: 600px;
+  position:absolute;
+  top:74%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+}
+.btn{
+  position: fixed;
+  top:71%;
+  left:64%;
+  border-radius: 20px;
+
+}
+
+#send{
+  font-weight: bold;
+  position: fixed;
+  top:71%;
+  left:69%;
+}
+.logoimg{
+  display: block;
+  position: fixed;
+  max-width:220px;
+  height: auto;
+  top:26%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+#home_test{
+  position: fixed;
+  top:40%;
+  display: block;
+  color: red;
+}
+#home_test h2{
+  color: blue;
+}
+div h6{
+  position: fixed;
+  text-align: center;
+  font-style:italic;
+  top:85%;
+  right: 19%;
+
+}

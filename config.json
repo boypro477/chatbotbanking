@@ -1,0 +1,10 @@
+
+{
+  "production": {
+    "connectionString" : "mongodb://admin:admin@ds159866.mlab.com:59866/banking"
+  },
+  "development": {
+    "connectionString" : "mongodb://localhost/banking",
+    "port" : 6969
+  }
+}
