@@ -20,7 +20,7 @@
 .btn{
   position: fixed;
   top:71%;
-  left:69%;
+  left:64%;
   border-radius: 20px;
 
 }
@@ -29,7 +29,7 @@
   font-weight: bold;
   position: fixed;
   top:71%;
-  left:64%;
+  left:69%;
 }
 .logoimg{
   display: block;
@@ -50,10 +50,6 @@
   color: blue;
 }
 div h6{
-  /* position: fixed; */
-  /* top :90%; */
-  /* left :30%; */
-  /* transform: translate(-50%,-50%); */
   position: fixed;
   text-align: center;
   font-style:italic;

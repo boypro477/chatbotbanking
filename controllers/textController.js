@@ -110,17 +110,13 @@ const getAnswer=(text,callback)=>{
                   let content2;
                   for(var i=0;i<answerList.length;i++)
                       if(keyword.indexOf(answerList[i].keyword)!=-1)
-                      {answer=answerList[i].content;
-                        // keyword=answerList[i];
+                      {answer=answerList[i].content;     
                       break;
-
                       }
                       else
                        answer=null;
                       if(answer==null)
-                       answer="Vui lòng liên hệ abc xyz để biết thêm chi tiết";
-                       // answer=keyword;
-                      // callback(keyword);
+                       answer="Vui lòng liên hệ abc xyz để biết thêm chi tiết";                
                       return callback(answer);
                 })
 
@@ -132,51 +128,7 @@ const getAnswer=(text,callback)=>{
   })
 }
 
-// const getAnswer=(text,callback)=>{
-//   let text2=text.toLowerCase();
-//     let nounList=getNounList((nounList)=>{
-//       let verbList=getVerbList((verbList)=>{
-//         let keywordList=getKeywordList((keywordList)=>{
-//           let contentList=getContentList((contentList)=>{
-//                       let noun;
-//                       let verb;
-//                       let keyword;
-//                     for(var i=0;i<nounList.length;i++)
-//                     {
-//                       if(text2.indexOf(nounList[i])>=0)
-//                         {noun=nounList[i];
-//                           break;
-//                         }
-//                         else noun=null;
-//                     }
-//                     if(noun!=null)
-//                   {  for(var i=0;i<verbList.length;i++)
-//                       {
-//                       if(text2.indexOf(verbList[i])>=0)
-//                         {verb=verbList[i];
-//
-//                           break;
-//                         }
-//                       }
-//
-//                       for(let i=0;i<keywordList.length;i++)
-//                       {
-//
-//                       if(keywordList[i].indexOf(noun+" "+verb)>=0)
-//                       {
-//                           callback(contentList[i]);
-//                           break;
-//                       }
-//                       if(i=keywordList.length)
-//                       callback("Bạn vui lòng nhập đúng thông tin cần tìm");
-//                     }
-//
-//                   }
-//         }) //2
-//       })
-//     })
-//   })
-// }
+
 module.exports={
   createNoun,createVerb,createContent,getAnswer,
   getNounList,
