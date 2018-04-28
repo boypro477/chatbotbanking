@@ -72,11 +72,11 @@
 #home_test h2{
   color: blue;
 }
-div h6{
+h6{
   position: fixed;
-  text-align: center;
+  left:24%;
   font-style:italic;
   top:85%;
-  right: 19%;
+
 
 }
