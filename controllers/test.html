@@ -13,8 +13,8 @@
         function aa() {
             var text=$('#text').text();
             var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+text+"&tl=vi&total=1&idx=0&textlen=3";
-                    document.getElementById('test').innerHTML=text;     
-                    document.getElementById('test2').innerHTML=text;     
+                    document.getElementById('test').value='dm';     
+                    document.getElementById('test2').value=text;     
             
                 }
         
@@ -24,8 +24,8 @@
     <h1>Ha ha ha</h1>
     <button onclick="aa()" >Click</button>
     <input type="text" id="text">
-    <h1 id='test'></h1>
-    <h2 id='test2'></h2>
+    <h1 id="test">h1</h1>
+    <h2 id="test2">h2</h2>
     <audio controls src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Bạn%20vui%20lòng%20nhập%20đúng%20thông%20tin%20cần%20tìm%20nha&tl=vi&total=1&idx=0&textlen=3">
     </audio>
 </body>
