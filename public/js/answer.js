@@ -22,14 +22,14 @@ $("#text_form").on("submit", event => {
       console.error(err);
     });
 });
-button.addEventListener
-function resetText (){
-  setTimeout(function() {
-      document.getElementById("Textarea").value = null;
+// button.addEventListener
+// function resetText (){
+//   setTimeout(function() {
+//       document.getElementById("Textarea").value = null;
 
-   }, 100);
+//    }, 100);
 
-}
+// }
 document.getElementById("send").addEventListener("mouseup",resetText);
 // document.getElementById("microphone").addEventListener("click", resetText);
 // <script src="/js/answer.js"></script>
