@@ -15,7 +15,7 @@ $("#text_form").on("submit", event => {
       var text= answer.answer;
       text = encodeURIComponent(text);
       var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+text+"&tl=vi&total=1&idx=0&textlen=3";
-      $('#audio').attr('src',url).get(0).play();
+      $('audio').attr('src',url).get(0).play();
     })
     .fail(err => {
       alert("An error occured, please try again later");
