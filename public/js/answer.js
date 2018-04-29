@@ -11,7 +11,9 @@ $("#text_form").on("submit", event => {
       document.getElementById('Textarea').value='';
       var text= answer.answer;
       // text = encodeURIComponent(text);
-      var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+'dcm'+"&tl=vi&total=1&idx=0&textlen=3";
+      var url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+text+"&tl=vi&total=1&idx=0&textlen=3";
+      $('audio').attr('src',url).get(0).load();
+      
       $('audio').attr('src',url).get(0).play();
       // $('#audio').html('<audio autoplay><source src="'+url+'"></audio>');
     })
@@ -20,6 +22,7 @@ $("#text_form").on("submit", event => {
       console.error(err);
     });
 });
+function speack
 // button.addEventListener
 // function resetText (){
 //   setTimeout(function() {
