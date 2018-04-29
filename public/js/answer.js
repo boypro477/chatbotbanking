@@ -14,7 +14,7 @@ $("#text_form").on("submit", event => {
       document.getElementById('Textarea').value='';
       var text= answer.answer;
       text = encodeURIComponent(text);
-      var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&client=tw-ob";
+      var url = "http://translate.google.com.vn/translate_tts?ie=UTF-8&q="+text+"&tl=vi&total=1&idx=0&textlen=93&tk=235129.385217&client=webapp&prev=input";
       $('audio').attr('src',url).get(0).play();
     })
     .fail(err => {
