@@ -22,7 +22,7 @@ $("#text_form").on("submit", event => {
       console.error(err);
     });
 });
-function speack
+// function speack
 // button.addEventListener
 // function resetText (){
 //   setTimeout(function() {
