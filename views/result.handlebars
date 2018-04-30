@@ -11,7 +11,9 @@
   
   <textarea class="form-control" id="resultTextArea"rows="7" readonly>{{answer}}</textarea>
 </div> --}}
-  <audio src="" class="speech" hidden></audio>
+  {{!-- <span id="audio"></span> --}}
+  {{!-- <div id="audio"></div>  --}}
+  <audio src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Xin chào&tl=vi&total=1&idx=0&textlen=3" hidden autoplay></audio>
   <textarea class="form-control pull-right" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
   <div>
     <button class="btn btn-dark pull-right" type="button" onclick="startConverting()" id="microphone"><i class="fa fa-microphone" ></i></button>

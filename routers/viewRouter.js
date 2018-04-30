@@ -13,6 +13,7 @@ router.post('/',(req,res)=>{
 router.post('/api/answer',(req,res)=>{
     let str=textController.getAnswer(req.body.text,str=>{
       res.send({answer:str});
+      
     })
 })
 module.exports = router;
