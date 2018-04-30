@@ -10,6 +10,7 @@
   position:absolute;
   top: 450px;
   left: 50%;
+  color: 	#000000;
   transform: translate(-50%,-50%);
   background: #fff;
 }
@@ -25,6 +26,7 @@
   position: absolute;
   bottom: -85%;
   right:25%;
+  border-radius: 0%;
 }
 #mario-chat{
   width: 600px;
