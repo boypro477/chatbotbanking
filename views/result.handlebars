@@ -1,5 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<form method="post" id="text_form">
+<form method="post" id="text_form" >
  <div class="form-group area">
   <div id="mario-chat">
     <div id="chat-window">
@@ -13,17 +13,25 @@
 </div> --}}
   {{!-- <span id="audio"></span> --}}
   {{!-- <div id="audio"></div>  --}}
-  <audio src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Xin chào&tl=vi&total=1&idx=0&textlen=3" hidden autoplay></audio>
+       
+
+  
+  {{!-- <audio src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=hai ba boons&tl=vi&total=1&idx=0&textlen=3" hidden autoplay></audio> --}}
   <textarea class="form-control pull-right" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
   <div>
     <button class="btn btn-dark pull-right" type="button" onclick="startConverting()" id="microphone"><i class="fa fa-microphone" ></i></button>
   </div>
   <div>
-    <button type="submit" class="btn btn-primary"id="send">Send</button>
+    <button type="submit" class="btn btn-primary"id="send"  >Send</button>
   </div>
 </div>
 <h6>Hiện website còn đang trong giai đoạn thử nghiệm, chỉ hỗ trợ tìm kiếm sms banking và bankplus</h6>
-
+    <audio controls src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Xin chao&tl=vi&total=1&idx=0&textlen=3" hidden autoplay >  </audio>
+{{!-- <h2> aaa{{answer}}</h2> --}}
 </form>
+{{!-- <form method="GET"> --}}
+ {{!-- <audio src="" ></audio> --}}
+  
+{{!-- </form> --}}
 <script src="Speech_to_text.js"></script>
 <script src="/js/answer.js"></script>
