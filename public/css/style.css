@@ -6,6 +6,7 @@
 }
 /* @media all (max-width: ) */
 #Textarea{
+  display: block;
   max-width: 600px;
   position:absolute;
   top: 450px;
@@ -15,6 +16,7 @@
   background: #fff;
 }
 .btn{
+  display: inline-block;
   position: absolute;
   bottom: -85%;
   right:32%;
@@ -22,6 +24,7 @@
 
 }
 #send{
+  display: block;  
   font-weight: bold;
   position: absolute;
   bottom: -85%;
@@ -50,7 +53,6 @@
   padding: 14px 0px;
   margin: 0 20px;
   border-bottom: 1px solid #BBBBBB;
-
 }
 
 .bot {
@@ -79,6 +81,7 @@
   color: blue;
 }
 h6{
+  display: block;
   position: fixed;
   left:24%;
   font-style:italic;

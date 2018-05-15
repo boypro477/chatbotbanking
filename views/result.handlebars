@@ -5,6 +5,7 @@
     <div id="chat-window">
       <div id="output"></div>
       {{!-- <div id="feedback"></div> --}}
+      
     </div>
   </div>
 {{!-- <div class="form-group">
@@ -17,16 +18,21 @@
 
   
   {{!-- <audio src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=hai ba boons&tl=vi&total=1&idx=0&textlen=3" hidden autoplay></audio> --}}
-  <textarea class="form-control pull-right" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
+    <div>
+      <textarea class="form-control pull-right" id="Textarea" name="text" rows="2" placeholder="Nhập câu hỏi của bạn....."></textarea>
+     <div>
+       <button class="btn btn-dark pull-right" type="button" onclick="startConverting()" id="microphone"><i class="fa fa-microphone" ></i></button>
+     </div>
+     <div>
+      <button type="submit" class="btn btn-primary"id="send"  >Send</button>
+     </div>
+    </div>
   <div>
-    <button class="btn btn-dark pull-right" type="button" onclick="startConverting()" id="microphone"><i class="fa fa-microphone" ></i></button>
-  </div>
-  <div>
-    <button type="submit" class="btn btn-primary"id="send"  >Send</button>
+    <h6>Hiện website còn đang trong giai đoạn thử nghiệm, chỉ hỗ trợ tìm kiếm sms banking và bankplus</h6>    
   </div>
 </div>
-<h6>Hiện website còn đang trong giai đoạn thử nghiệm, chỉ hỗ trợ tìm kiếm sms banking và bankplus</h6>
-    <audio controls src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Xin chao&tl=vi&total=1&idx=0&textlen=3" hidden autoplay >  </audio>
+
+    <audio  src="https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Xin chao&tl=vi&total=1&idx=0&textlen=3" hidden autoplay >  </audio  gi>
 {{!-- <h2> aaa{{answer}}</h2> --}}
 </form>
 {{!-- <form method="GET"> --}}

@@ -116,7 +116,7 @@ const getAnswer=(text,callback)=>{
                       else
                        answer=null;
                       if(answer==null)
-                       answer="Vui lòng liên hệ abc xyz để biết thêm chi tiết";                
+                       answer="Vui lòng liên hệ ... để biết thêm chi tiết";                
                       return callback(answer);
                 })
 
