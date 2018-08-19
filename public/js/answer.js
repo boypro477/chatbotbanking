@@ -1,4 +1,4 @@
-
+// Get audio form gg
 $("#text_form").on("submit", event => {
   event.preventDefault();
   $.ajax({
@@ -15,12 +15,7 @@ $("#text_form").on("submit", event => {
 
 
 
-      // <audio src="" class="speech" hidden autoplay></audio>
-      //  document.getElementById("audio").innerHTML='<audio'+' src="'+"https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q="+answer.answer+"&tl=vi&total=1&idx=0&textlen=3"+'"'+'class="speech" hidden autoplay></audio>';
-      // var text= answer.answer;
-      // text = encodeURIComponent(text);
-      // getSound(answer.answer);
-      // $('#audio').html('<audio autoplay><source src="'+url+'"></audio>');
+   
     })
     .fail(err => {
       alert("An error occured, please try again later");

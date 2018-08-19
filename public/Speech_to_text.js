@@ -37,7 +37,10 @@
 						}
 						text = finalTranscripts + interimTranscripts;
 						document.getElementById('Textarea').value = finalTranscripts  + interimTranscripts ;
-
+						// reset text by jquery
+						$("#send").mouseup(function (){
+							$("#textarea").value="";
+						})
 						// document.getElementById('Test').innerHTML = finalTranscripts  + interimTranscripts ;
 
 					};
